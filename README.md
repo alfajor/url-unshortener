@@ -2,6 +2,8 @@
 
 Convert that shortened URL to the original again with this simple tool! 
 
+![Alt text](/screenshots/unshorten.png?raw=true "Unshorten Tool")
+
 # Install
 
 Download or clone and run:
@@ -14,6 +16,4 @@ Download or clone and run:
 
 # Web Tool
 
-Visit the web version [URL Shortener](https://url-unshortener.herokuapp.com/) here.
-
-![Alt text](/screenshots/unshorten.png?raw=true "Unshorten Tool")
+Check out the web version [URL Un-Shortener](https://url-unshortener.herokuapp.com/).
