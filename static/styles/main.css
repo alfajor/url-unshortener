@@ -1,0 +1,41 @@
+:root {
+    --lightGrayColor: #e8e8e8;
+    --darkGrayColor: #888888;
+}
+
+body {
+    font-family: 'Futura', 'helvetica';
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container span {
+    font-style: italic;
+}
+
+.prompt {
+    border-top: 2px solid var(--lightGrayColor);
+}
+
+#url-form input {
+    padding: 10px 25px;
+    font-size: 14px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--darkGrayColor);
+    border-radius: 2px;
+}
+
+#url-form input:focus {
+    outline: none;
+}
+
+.results p {
+    color: #a0a0a0;
+}

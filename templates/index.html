@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Url Shortener Tool</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="{{ url_for('static', filename='styles/main.css') }}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>URL <span>Un-</span>Shortener</h1>
+            <h3>Reverse a shortened URL to its original form</h3>
+            <p>Ex: http://tinyurl.com/y3z9jshq</p>
+           
+            <div class="prompt">
+                <p>{{ prompt }}</p>
+            </div>
+
+            <div class="form-wrapper">
+                <form id="url-form" action="/" method="get">
+                    <input type="text" placeholder="http://shorturl.at/vCJNS" name="url" />
+                    <input type="hidden" name="query" value="true" />
+                </form>
+            </div>
+            
+            <div class="results">
+                {% if result %}
+                    <p>{{ result }}</p>
+                {% endif %}
+            </div>
+        </div> 
+
+    </body>
+</html>
