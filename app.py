@@ -8,6 +8,8 @@ app = Flask(__name__)
 app.config.from_pyfile('settings.py')
 app.secret_key = os.environ.get('SECRET_KEY')
 
+if __name__ == '__main__':
+    app.run()
 
 @app.route('/', methods=['GET'])
 def index():
